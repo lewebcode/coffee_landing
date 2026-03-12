@@ -3,6 +3,9 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   root: '.',
   publicDir: 'public',
+  optimizeDeps: {
+    include: ['swiper'],
+  },
   build: {
     outDir: 'dist',
     rollupOptions: {

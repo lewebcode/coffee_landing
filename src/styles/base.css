@@ -1,0 +1,117 @@
+/* Design tokens & global base */
+:root {
+  --color-accent: #c99e71;
+  --color-bg-dark: #1c1814;
+  --color-bg-black: #010102;
+  --color-text: #ffffff;
+  --color-text-muted: rgba(255, 255, 255, 0.8);
+  --font-heading: 'Righteous', sans-serif;
+  --font-body: 'Urbanist', sans-serif;
+  --font-ui: 'Inter', sans-serif;
+  --container-max: 1170px;
+  --container-padding: 24px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+/* Shared buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 24px 40px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.15s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn--primary {
+  background: var(--color-accent);
+  color: var(--color-text);
+}
+
+.btn--cart {
+  background: var(--color-bg-dark);
+  color: var(--color-text);
+  border: 1px solid var(--color-accent);
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.btn--block {
+  width: 100%;
+}
+
+/* Section typography (used by several components) */
+.section-label {
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1.25;
+  font-weight: 400;
+  margin: 0 0 2rem;
+  color: var(--color-text);
+}

@@ -1,0 +1,152 @@
+/* Hero */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 180px 0 80px;
+  overflow: hidden;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero__bg img,
+.hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__video {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 0.5;
+}
+
+.hero__video.is-playing {
+  opacity: 1;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(1, 1, 2, 0) 0%, rgba(1, 1, 2, 0.4) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero__title {
+  font-family: var(--font-heading);
+  font-size: clamp(42px, 8vw, 72px);
+  line-height: 1.2;
+  font-weight: 400;
+  margin: 0 0 24px;
+  color: var(--color-text);
+}
+
+.hero__text {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.8;
+  color: var(--color-text-muted);
+  max-width: 511px;
+  margin: 0 0 40px;
+  text-transform: capitalize;
+}
+
+.hero__play {
+  position: absolute;
+  right: calc((100vw - var(--container-max)) / 2 + var(--container-padding) + 80px);
+  bottom: 15%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero__play-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.hero__play-circle,
+.hero__play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero__play-circle {
+  width: 70px;
+  height: 70px;
+}
+
+.hero__play-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__play-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.hero__play-icon--pause {
+  color: var(--color-text);
+}
+
+.hero__play-icon--pause[hidden],
+.hero__play-icon--play[hidden] {
+  display: none !important;
+}
+
+.hero__play-label {
+  font-family: var(--font-ui);
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+@media (max-width: 1024px) {
+  .hero__play {
+    right: var(--container-padding);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 140px 0 60px;
+  }
+
+  .hero__play {
+    position: static;
+    margin-top: 32px;
+  }
+}

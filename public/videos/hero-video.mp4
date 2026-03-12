@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>SkyTelecom</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" type="text/css" href="/css/styles.min2.css">
+</head>
+
+<body>
+  <div class="deny-page">
+    <div class="container"><img class="basic-logo" src="/img/basic-logo.png" alt="">
+      <div class="content"><span class="small-text">к сожалению,</span>
+        <h1 class="big-text">
+          Доступ <span>Запрещён</span></h1>
+        <p class="text">
+          Доступ к информационному ресурсу ограничен <br>на основании Федерального закона от 27 июля 2006 г. N 149–ФЗ
+          <br>«Об информации, информационных технологиях и о защите информации».</p>
+        <p class="text">
+          Подробнее о причинах блокировки можно узнать в <a href="https://eais.rkn.gov.ru/" target="_blank">едином
+            реестре
+          </a>доменных имен,<br>указателей страниц сайтов в сети «Интернет» и сетевых адресов, позволяющих
+          идентифицировать сайты в сети «Интернет»,<br>содержащие информацию, распространение которой в Российской
+          Федерации запрещено.</p><img class="img-stop" src="/img/ico-stop.svg" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

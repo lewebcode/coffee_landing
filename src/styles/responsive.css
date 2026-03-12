@@ -1,0 +1,6 @@
+/* Global responsive overrides (section-title used in multiple components) */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 28px;
+  }
+}

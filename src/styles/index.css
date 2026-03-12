@@ -1,0 +1,18 @@
+/**
+ * Entry point for all styles.
+ * Base first, then components, then global responsive.
+ */
+@import './base.css';
+@import './header.css';
+@import './hero.css';
+@import './process.css';
+@import './history.css';
+@import './products.css';
+@import './cta.css';
+@import './menu.css';
+@import './testimonial.css';
+@import './booking.css';
+@import './blog.css';
+@import './footer.css';
+@import './modal.css';
+@import './responsive.css';

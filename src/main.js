@@ -1,5 +1,6 @@
 /**
  * Entry point for Coffee Shop landing.
- * Styles are imported here so Vite processes them (HMR, minification on build).
+ * Registers Web Components and loads global styles.
  */
-import './styles.css';
+import './components/index.js';
+import './styles/index.css';
